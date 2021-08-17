@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Calculator</title>
+     <link rel="stylesheet" href="styles/style.css">
+     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body>
+     <!-- header is here  -->
+     <header>
+          <h1 class="text-4xl font-bold text-center my-8 text-yellow-700">Caclulator Project </h1>
+     </header>
+     <!-- main is here  -->
+     <main class="w-2/4 mx-auto ">
+          <div class="calculator " >
+               <div class=" mb-4">
+                    <div>
+                         <div><input type="text" name="" id="display-screen"  class="py-4 font-bold  text-3xl text-right bg-gray-100 rounded-lg" disabled></div>
+                    </div>
+                    <div class="ml-4 my-4"><input onclick="clearValue()" class="button bg-red-600 text-white font-semibold py-4 px-4 rounded-lg" type="button" value="Clear" >
+                    </div>
+
+               </div>
+               <div class="flex gap-8  mb-4">
+                    <div><input onclick="butonClick('7')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "7" />
+                    </div>
+                    <div><input onclick="butonClick('8')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "8" />
+                    </div>
+                    <div><input onclick="butonClick('9')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "9" />
+                    </div>
+                    <div><input onclick="butonClick('+')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "+" />
+                    </div>
+                    
+               </div>
+               <div class="flex gap-8  mb-4">
+                    <div><input onclick="butonClick('4')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "4" />
+                    </div>
+                    <div><input onclick="butonClick('5')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "5" />
+                    </div>
+                    <div><input onclick="butonClick('6')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "6" />
+                    </div>
+                    <div><input onclick="butonClick('-')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "-" />
+                    </div>
+                    
+               </div>
+               <div class="flex gap-8  mb-4">
+                    <div><input onclick="butonClick('1')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "1" />
+                    </div>
+                    <div><input onclick="butonClick('2')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "2" />
+                    </div>
+                    <div><input onclick="butonClick('3')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "3" />
+                    </div>
+                    <div><input onclick="butonClick('/')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "/" />
+                    </div>
+               
+             </div>
+             <div class="flex gap-8  mb-4">
+               <div><input onclick="butonClick('0')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "0" />
+               </div>
+               <div><input onclick="butonClick('.')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "." />
+               </div>
+               <div><input onclick="butonClick('*')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "*" />
+               </div>
+               <div><input onclick="calculate('=')"  class="button bg-white py-4 px-6 rounded-lg text-red-700 font-bold" type="button"  value = "=" />
+               </div>
+               
+             
+               
+          </div>
+     </main>
+     <!-- footer at the bottom  -->
+     <footer>
+
+     </footer>
+
+     <!-- JS Scritp linkUp  -->
+     <script src="js/script.js"></script>
+</body>
+</html>
